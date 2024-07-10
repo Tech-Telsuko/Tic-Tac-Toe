@@ -1,0 +1,86 @@
+.bg-container {
+    background-color: #0f1B21;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    color: white;
+    font-size: 25px;
+}
+
+.reset-button {
+    color: #26ffcb;
+    background-color: #1f3540;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    border: 2px solid #26ffcd;
+    background-color: transparent;
+}
+
+.react {
+    color: #26ffcb;
+}
+
+.game {
+    text-align: center;
+    padding: 20px;
+    max-width: 200px;
+
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.box {
+    width: 68px;
+    height: 68px;
+    font-size: 30px;
+    border: 1.5px solid #0f1b21;
+    cursor: pointer;
+    background-color: #1f3540;
+    color: #26ffcb;
+}
+
+.box:hover {
+    background-color: #475569;
+}
+
+@media screen and (min-width:768px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .status {
+        font-size: 30px;
+    }
+
+    .game {
+        max-width: 300px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        font-size: 35px;
+    }
+}
